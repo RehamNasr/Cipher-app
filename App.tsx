@@ -32,28 +32,7 @@ const App = () => {
 };
 
 export default App;
-// import * as React from 'react'
-// import { StatusBar } from 'react-native'
-// import Splash from './pages/Splash';
-// import * as Constant from './android/app/src/consts/constant'
-// import AppNavigation from './Navigation/AppNavigation';
 
-// function app() {
-//     const [show, setshow] = React.useState(true)
-//     setTimeout(() => {
-//         setshow(false)
-//     }, 1000);
-//     return (
-//         <>
-//             <StatusBar backgroundColor={Constant.backgroundcolor} barStyle={"dark-content"}></StatusBar>
-//             {
-//                 show ?
-//                     <Splash></Splash> :
-//                     <AppNavigation></AppNavigation>
-//             }
-
-//         </>
-//     )
 // }
 
 
