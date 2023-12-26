@@ -15,7 +15,7 @@ export default function Pass1({navigation}) {
 
     return (
         <>
-            <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+            
             {
                 loading ?
                     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>

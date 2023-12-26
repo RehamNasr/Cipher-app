@@ -58,7 +58,7 @@ function AllPharmacy({navigation}) {
     )
     return (
         <>
-            <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+           
       
                 <View style={style.contanier}>
 
@@ -175,7 +175,8 @@ const style = StyleSheet.create({
         height: height*.73,
         flexDirection: "row",
         justifyContent: "space-between",
-        alignItems: "center"
+        alignItems: "center",
+        paddingBottom:70
 
     },
 

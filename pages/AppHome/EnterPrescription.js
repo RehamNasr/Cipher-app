@@ -2,7 +2,7 @@
 
 
 import { Text, View, StyleSheet, StatusBar, Image, Dimensions, TouchableOpacity, TextInput, FlatList, ImageBackground, ScrollView, Modal } from 'react-native'
-import * as Constant from '../../android/app/src/consts/constant'
+import * as Constant from "../../android/app/src/consts/constant"
 const { height, width } = Dimensions.get("screen")
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons'
@@ -11,7 +11,7 @@ import ImageZoomViewer from 'react-native-image-zoom-viewer';
 import ImagePicker from 'react-native-image-crop-picker';
 import RBSheet from "react-native-raw-bottom-sheet";
 
-function EnterPrescription({navigation}) {
+function EnterPrescription({ navigation }) {
 
     const [images, setImages] = useState([
         // Add more image objects as needed
@@ -75,16 +75,16 @@ function EnterPrescription({navigation}) {
     }
     return (
         <>
-            <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+
 
             <View style={style.contanier}>
 
                 <View style={style.heading}>
                     <TouchableOpacity style={style.touchicon}
-                    onPress={() => {
-                        navigation.goBack()
-                    }}
-                    
+                        onPress={() => {
+                            navigation.goBack()
+                        }}
+
                     >
                         <AntDesign name="left" style={style.iconsize}></AntDesign>
                     </TouchableOpacity>
@@ -101,7 +101,8 @@ function EnterPrescription({navigation}) {
                         <TouchableOpacity style={style.main}
                             onPress={() => { sheet.current.open() }}
                         >
-                            <Image style={style.image} source={require("../../android/app/src/assets/images/upload2.png")}></Image>
+
+                            <ImageBackground style={style.image} source={require("../../android/app/src/assets/images/upload2.png")}></ImageBackground>
                             <Text style={style.Text2}>Upload your prescription</Text>
                         </TouchableOpacity> :
                         <View style={style.viewlist}>
@@ -114,12 +115,12 @@ function EnterPrescription({navigation}) {
                                             }}>
 
 
-                                            <Image source={{ uri: item.path }} style={style.image3}>
+                                            <ImageBackground source={{ uri: item.path }} style={style.image3}>
+                                                <TouchableOpacity style={style.touchclose} onPress={() => del(index)}>
+                                                    <AntDesign name="delete" style={style.close}></AntDesign>
+                                                </TouchableOpacity>
+                                            </ImageBackground>
 
-                                            </Image>
-                                            <TouchableOpacity onPress={() => del(index)}>
-                                                <AntDesign name="delete" style={style.close}></AntDesign>
-                                            </TouchableOpacity>
                                         </TouchableOpacity>
                                     </>
 
@@ -133,7 +134,7 @@ function EnterPrescription({navigation}) {
                 }
                 {
                     images.length ?
-                        <TouchableOpacity style={{ ...Constant.style.button, backgroundColor: Constant.text_color,position:"absolute",bottom:10 }}>
+                        <TouchableOpacity style={{ ...Constant.style.button, backgroundColor: Constant.text_color, position: "absolute", bottom: 10 }}>
                             <Text style={{ ...style.Text, color: "white" }}>Buy</Text>
                         </TouchableOpacity> : null
                 }
@@ -158,7 +159,7 @@ function EnterPrescription({navigation}) {
                         </TouchableOpacity>
                         <TouchableOpacity style={style.boxaction} onPress={() => { opencamera() }}>
                             <Image style={style.image2} source={require("../../android/app/src/assets/images/scan.png")} resizeMode="contain"></Image>
-                            <Text style={style.Text3}>upload image</Text>
+                            <Text style={style.Text3}>scan image</Text>
                         </TouchableOpacity>
                     </View>
                 </RBSheet>
@@ -274,10 +275,23 @@ const style = StyleSheet.create({
         elevation: 1,
         shadowColor: Constant.text_color,
         marginLeft: 5
-    }, close: {
-        fontSize: 11,
-        color: "#f00",
+    },
+    touchclose: {
+        width: 20,
+        height: 20,
+        alignItems: "center",
+        justifyContent: "center",
+        borderRadius: 2,
+        backgroundColor: Constant.backgroundcolor,
+        margin: 2,
+        alignSelf: "flex-end",
+
+    },
+    close: {
+        fontSize: 9,
+        color: "#f32626",
         textAlign: "right",
+   
 
     }
 

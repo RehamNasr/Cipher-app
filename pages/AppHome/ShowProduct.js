@@ -73,7 +73,7 @@ function ShowProduct({ navigation }) {
         <>
 
 
-            <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+        
 
             <View style={style.contanier}>
                 <ScrollView style={{

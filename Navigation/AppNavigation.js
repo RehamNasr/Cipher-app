@@ -59,7 +59,7 @@ function AppNavigation() {
 
     return (
         <>
-            <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+         
             <logincontext.Provider value={{ changelogin, logout }}>
                 {
                     loading ?

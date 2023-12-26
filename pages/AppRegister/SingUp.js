@@ -121,7 +121,7 @@ function SingUp({ navigation }) {
 
     return (
         <>
-            <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+       
             <View style={style.contanier}>
                 <ScrollView style={{ marginTop: 0 }}>
                     <Image

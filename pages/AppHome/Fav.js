@@ -33,7 +33,7 @@ function Search({ navigation }) {
 
     return (
         <>
-            <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+         
 
             <View style={style.contanier}>
 

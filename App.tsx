@@ -1,52 +1,61 @@
 
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { View, Button, TouchableOpacity, Text, Image, StyleSheet, StatusBar } from 'react-native';
 
+import Slashscreen from './pages2/splashscreen'
+import MainScreen from './pages2/MainScreen'
+import CeaserCipher from './pages2/CaesarCipher';
+import ViginereCipher from './pages2/VigenereCipher';
+import AffineCipher from './pages2/AffineCipher'
+const Stack = createNativeStackNavigator();
+
+const App = () => {
+  return (
+    <>
+      <StatusBar backgroundColor={'rgb(2 150 160)'}></StatusBar>
+      <NavigationContainer>
+        <Stack.Navigator
+          screenOptions={{
+            headerShown: false,
+          }}>
+          <Stack.Screen name="Splashscreen" component={Slashscreen} />
+          <Stack.Screen name='MainScreen' component={MainScreen} />
+          <Stack.Screen name='CeaserCipher' component={CeaserCipher} />
+          <Stack.Screen name='ViginereCipher' component={ViginereCipher} />
+          <Stack.Screen name='AffineCipher' component={AffineCipher} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </>
+  );
+};
+
+export default App;
 // import * as React from 'react'
-// import { Alert, Text, View, StyleSheet, TouchableOpacity, Dimensions, Image, StatusBar } from 'react-native'
-// import Splash from './pages/Splash'
-// import Page1 from './pages/Page1'
-// const { height, width } = Dimensions.get("screen")
+// import { StatusBar } from 'react-native'
+// import Splash from './pages/Splash';
+// import * as Constant from './android/app/src/consts/constant'
+// import AppNavigation from './Navigation/AppNavigation';
 
 // function app() {
-//   setTimeout(() => {
-//     setview(false)
-//   }, 3000);
-//   const [view, setview] = React.useState(true)
-//   return (
-//     <>
-//     {view?
-//     <Splash></Splash>:
-//     <Page1></Page1>
-//     }
-//     </>
-//   )
+//     const [show, setshow] = React.useState(true)
+//     setTimeout(() => {
+//         setshow(false)
+//     }, 1000);
+//     return (
+//         <>
+//             <StatusBar backgroundColor={Constant.backgroundcolor} barStyle={"dark-content"}></StatusBar>
+//             {
+//                 show ?
+//                     <Splash></Splash> :
+//                     <AppNavigation></AppNavigation>
+//             }
+
+//         </>
+//     )
 // }
 
 
 // export default app
 
-import * as React from 'react'
-import { StatusBar } from 'react-native'
-import Splash from './pages/Splash';
-import * as Constant from './android/app/src/consts/constant'
-import AppNavigation from './Navigation/AppNavigation';
-
-function app() {
-  const [show,setshow]=React.useState(true)
-  setTimeout(() => {
-    setshow(false)
-  }, 1000);
-  return (
-    <>
-      
-      {
-        show?
-        <Splash></Splash>:
-        <AppNavigation></AppNavigation>
-      }
-      
-    </>
-  )
-}
-
-
-export default app

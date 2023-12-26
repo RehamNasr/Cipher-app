@@ -68,7 +68,7 @@ function SearchByShape({ navigation }) {
     return (
         <>
             <ShapeContext.Provider value={{ setvisibleshape, setvisiblecolor, changevalueshape, changevaluecolor }}>
-                <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+          
                
                     <View style={style.contanier}>
 

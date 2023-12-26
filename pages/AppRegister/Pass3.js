@@ -16,7 +16,7 @@ export default function Pass3({ navigation }) {
     const { changelogin } = React.useContext(logincontext)
     return (
         <>
-            <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+           
             {
                 loading ?
                     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>

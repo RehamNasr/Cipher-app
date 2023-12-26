@@ -34,7 +34,7 @@ function Search({ navigation }) {
 
     return (
         <>
-            <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+         
             {/* <ScrollView> */}
             <View style={style.contanier}>
 

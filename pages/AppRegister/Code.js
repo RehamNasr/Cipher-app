@@ -11,7 +11,7 @@ function Code({ navigation }) {
 
     return (
         <>
-            <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+         
             <View style={style.contanier}>
 
                 <View style={style.box}>

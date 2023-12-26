@@ -27,7 +27,7 @@ export default function Privacy({navigation}) {
     ])
     return (
         <>
-            <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+     
 
             <View style={style.view}>
                 <View style={style.header}>

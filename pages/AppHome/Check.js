@@ -11,7 +11,6 @@ import ImageZoomViewer from 'react-native-image-zoom-viewer';
 import { FloatingAction } from "react-native-floating-action";
 import Modal from 'react-native-modal'
 import SelectCategoryModel from "./SelectCategoryModel"
-import { ShapeContext } from '../../context'
 import SelectDropdown from 'react-native-select-dropdown'
 import LottieView from 'lottie-react-native'
 import CheckBox from 'react-native-check-box'
@@ -28,7 +27,7 @@ function Check({ navigation }) {
     return (
         <>
 
-            <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+         
             <ScrollView >
                 <View style={style.contanier}>
 

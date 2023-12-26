@@ -23,7 +23,7 @@ const stack = createNativeStackNavigator()
 function MainNavigaton() {
     return (
         <>
-            <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+          
 
             <stack.Navigator screenOptions={{ headerShown: false }}>
                 <stack.Screen name='HomeTab' component={HomeTab}></stack.Screen>

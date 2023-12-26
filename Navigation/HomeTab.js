@@ -20,7 +20,7 @@ const Tab = createBottomTabNavigator();
 function HomeTab() {
   return (
     <>
-      <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+ 
 
 
       <Tab.Navigator

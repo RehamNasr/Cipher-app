@@ -9,7 +9,7 @@ function Choice({navigation}) {
 
     return (
         <>
-            <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+            
             <View style={style.contanier}>
                 <Image
                     source={require("../../android/app/src/assets/images/choice.png")}

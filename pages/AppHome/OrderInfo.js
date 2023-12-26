@@ -34,7 +34,7 @@ function OrderInfo() {
 
     return (
         <>
-            <StatusBar backgroundColor={Constant.text_color}></StatusBar>
+           
 
             <View style={style.contanier}>
 

@@ -72,7 +72,7 @@ function PharmacyProfile({ navigation }) {
     return (
         <>
             <ShapeContext.Provider value={{ changevaluecategory, setvisiblecategory }}>
-                <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+             
 
                 <View style={style.contanier}>
 

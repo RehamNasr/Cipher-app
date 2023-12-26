@@ -78,7 +78,7 @@ function Home({ navigation }) {
     )
     return (
         <>
-            <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+            
             <ScrollView contentContainerStyle={{alignItems:"center",backgroundColor:Constant.backgroundcolor}} style={{width:width}}>
                 <View style={style.contanier}>
 

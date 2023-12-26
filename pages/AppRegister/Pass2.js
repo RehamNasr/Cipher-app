@@ -61,7 +61,7 @@ export default function Pass2({navigation}) {
     // }, []);
     return (
         <>
-            <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+          
             <View
                 style={style.view}
             >

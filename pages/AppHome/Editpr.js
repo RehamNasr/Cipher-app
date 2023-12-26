@@ -62,7 +62,7 @@ export default function Editpr({ navigation }) {
         <>
 
             <View style={style.view}>
-                <StatusBar backgroundColor={Constant.white}></StatusBar>
+           
                 <View style={style.header}>
                     <TouchableOpacity style={{ height: height * .1, width: width * .15, alignItems: "center", justifyContent: "center" }}
                         onPress={() => {

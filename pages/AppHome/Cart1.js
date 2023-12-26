@@ -40,7 +40,7 @@ function Cart1({ navigation }) {
         <>
 
 
-            <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+   
 
             <View style={style.contanier}>
 

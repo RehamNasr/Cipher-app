@@ -37,7 +37,7 @@ const Trackorder = () => {
     const [status, setstatus] = useState(2)
     return (
         <>
-            <StatusBar backgroundColor={Constant.backgroundcolor}></StatusBar>
+         
 
             <View style={style.contanier}>
 
